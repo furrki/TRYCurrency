@@ -20,7 +20,9 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         CurrencyService.shared.getExchangeRates(base: "TRY") { [unowned self] (rates) in
             self.rates = rates
-            self.rateTable.reloadData()
+            DispatchQueue.main.async {
+                self.rateTable.reloadData()
+            }
         }
         rateTable.delegate = self
         rateTable.dataSource = self
