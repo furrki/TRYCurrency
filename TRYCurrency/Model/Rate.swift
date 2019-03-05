@@ -13,6 +13,10 @@ class Rate {
     var to: String
     var value: Double
     
+    var desc: String {
+        return "\(base) \(to) \(value)"
+    }
+    
     init(base: String, to: String, value: Double) {
         self.base = base
         self.to = to

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1940C6E94E143D7CAC346D4F /* Pods_TRYCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD835D968C7BF1BD2AA3D71B /* Pods_TRYCurrency.framework */; };
 		84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F3D222F110D004FA8E8 /* AppDelegate.swift */; };
-		84A08F40222F110D004FA8E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F3F222F110D004FA8E8 /* ViewController.swift */; };
+		84A08F40222F110D004FA8E8 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F3F222F110D004FA8E8 /* MainVC.swift */; };
 		84A08F43222F110D004FA8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F41222F110D004FA8E8 /* Main.storyboard */; };
 		84A08F45222F1110004FA8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F44222F1110004FA8E8 /* Assets.xcassets */; };
 		84A08F48222F1110004FA8E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F46222F1110004FA8E8 /* LaunchScreen.storyboard */; };
@@ -41,7 +41,7 @@
 		323802C34607157683ADCF51 /* Pods-TRYCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRYCurrency.release.xcconfig"; path = "Target Support Files/Pods-TRYCurrency/Pods-TRYCurrency.release.xcconfig"; sourceTree = "<group>"; };
 		84A08F3A222F110D004FA8E8 /* TRYCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRYCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A08F3D222F110D004FA8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84A08F3F222F110D004FA8E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84A08F3F222F110D004FA8E8 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		84A08F42222F110D004FA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84A08F44222F1110004FA8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A08F47222F1110004FA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,16 +119,13 @@
 		84A08F3C222F110D004FA8E8 /* TRYCurrency */ = {
 			isa = PBXGroup;
 			children = (
+				84A08F76222F2AB3004FA8E8 /* Resources */,
 				84A08F6F222F13F7004FA8E8 /* Utils */,
 				84A08F6E222F13EC004FA8E8 /* Network */,
 				84A08F6D222F13E5004FA8E8 /* Controller */,
 				84A08F6C222F13DF004FA8E8 /* View */,
 				84A08F6B222F13D6004FA8E8 /* Model */,
 				84A08F3D222F110D004FA8E8 /* AppDelegate.swift */,
-				84A08F3F222F110D004FA8E8 /* ViewController.swift */,
-				84A08F41222F110D004FA8E8 /* Main.storyboard */,
-				84A08F44222F1110004FA8E8 /* Assets.xcassets */,
-				84A08F46222F1110004FA8E8 /* LaunchScreen.storyboard */,
 				84A08F49222F1110004FA8E8 /* Info.plist */,
 			);
 			path = TRYCurrency;
@@ -170,6 +167,7 @@
 		84A08F6D222F13E5004FA8E8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				84A08F3F222F110D004FA8E8 /* MainVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +186,24 @@
 				84A08F70222F1B77004FA8E8 /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		84A08F76222F2AB3004FA8E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84A08F44222F1110004FA8E8 /* Assets.xcassets */,
+				84A08F77222F2ABD004FA8E8 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84A08F77222F2ABD004FA8E8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				84A08F46222F1110004FA8E8 /* LaunchScreen.storyboard */,
+				84A08F41222F110D004FA8E8 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		C7FA8D964F0A71920F5B38A6 /* Frameworks */ = {
@@ -379,7 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A08F73222F1CAC004FA8E8 /* CurrencyService.swift in Sources */,
-				84A08F40222F110D004FA8E8 /* ViewController.swift in Sources */,
+				84A08F40222F110D004FA8E8 /* MainVC.swift in Sources */,
 				84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */,
 				84A08F75222F1E86004FA8E8 /* Rate.swift in Sources */,
 				84A08F71222F1B77004FA8E8 /* Constants.swift in Sources */,
