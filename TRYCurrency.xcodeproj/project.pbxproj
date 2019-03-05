@@ -18,6 +18,8 @@
 		84A08F71222F1B77004FA8E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F70222F1B77004FA8E8 /* Constants.swift */; };
 		84A08F73222F1CAC004FA8E8 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F72222F1CAC004FA8E8 /* CurrencyService.swift */; };
 		84A08F75222F1E86004FA8E8 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F74222F1E86004FA8E8 /* Rate.swift */; };
+		84A08F79222F2DBB004FA8E8 /* RoundedTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F78222F2DBB004FA8E8 /* RoundedTableView.swift */; };
+		84A08F7B222F2EB6004FA8E8 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F7A222F2EB6004FA8E8 /* RateCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		84A08F70222F1B77004FA8E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84A08F72222F1CAC004FA8E8 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		84A08F74222F1E86004FA8E8 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		84A08F78222F2DBB004FA8E8 /* RoundedTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTableView.swift; sourceTree = "<group>"; };
+		84A08F7A222F2EB6004FA8E8 /* RateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
 		CD835D968C7BF1BD2AA3D71B /* Pods_TRYCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRYCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE233B89953D5C5000925E58 /* Pods-TRYCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRYCurrency.debug.xcconfig"; path = "Target Support Files/Pods-TRYCurrency/Pods-TRYCurrency.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +164,8 @@
 		84A08F6C222F13DF004FA8E8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84A08F78222F2DBB004FA8E8 /* RoundedTableView.swift */,
+				84A08F7A222F2EB6004FA8E8 /* RateCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,8 +403,10 @@
 				84A08F73222F1CAC004FA8E8 /* CurrencyService.swift in Sources */,
 				84A08F40222F110D004FA8E8 /* MainVC.swift in Sources */,
 				84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */,
+				84A08F79222F2DBB004FA8E8 /* RoundedTableView.swift in Sources */,
 				84A08F75222F1E86004FA8E8 /* Rate.swift in Sources */,
 				84A08F71222F1B77004FA8E8 /* Constants.swift in Sources */,
+				84A08F7B222F2EB6004FA8E8 /* RateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
