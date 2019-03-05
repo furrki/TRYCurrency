@@ -16,11 +16,13 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        CurrencyService.shared.getExchangeRates(base: "TRY") { (rates) in
+        CurrencyService.shared.getExchangeRates(base: "TRY") { [unowned self] (rates) in
             rates.forEach({ (rate) in
                 print(rate.desc)
             })
         }
+        rateTable.delegate = self
+        rateTable.dataSource = self
     }
 }
 
@@ -31,7 +33,8 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = rateTable.dequeueReusableCell(withIdentifier: "rateCell") as! RateCell
-        
+        let rate = Rate(base: "TRY", to: "USD", value: 0.2)
+        cell.fillWith(rate: rate)
         return cell
     }
 }
