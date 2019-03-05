@@ -26,6 +26,6 @@ class RateCell: UITableViewCell {
     
     func fillWith(rate: Rate) {
         baseLabel.text = "1 \(rate.base)"
-        toLabel.text = "\(rate.value) \(rate.to)"
+        toLabel.text = "\(rate.value.limitDecimals()) \(rate.to)"
     }
 }

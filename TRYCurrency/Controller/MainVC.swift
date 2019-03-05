@@ -13,28 +13,30 @@ class MainVC: UIViewController {
     @IBOutlet weak var rateTable: RoundedTableView!
     
     let base = "TRY"
+    var rates = [Rate]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         CurrencyService.shared.getExchangeRates(base: "TRY") { [unowned self] (rates) in
-            rates.forEach({ (rate) in
-                print(rate.desc)
-            })
+            self.rates = rates
+            self.rateTable.reloadData()
         }
         rateTable.delegate = self
         rateTable.dataSource = self
+        rateTable.tableFooterView = UIView()
+        rateTable.separatorStyle = .none
+        
     }
 }
 
 extension MainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return rates.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = rateTable.dequeueReusableCell(withIdentifier: "rateCell") as! RateCell
-        let rate = Rate(base: "TRY", to: "USD", value: 0.2)
-        cell.fillWith(rate: rate)
+        cell.fillWith(rate: rates[indexPath.row])
         return cell
     }
 }

@@ -17,6 +17,10 @@ class Rate {
         return "\(base) \(to) \(value)"
     }
     
+    var inverseValue: Double {
+        return 1 / value
+    }
+    
     init(base: String, to: String, value: Double) {
         self.base = base
         self.to = to

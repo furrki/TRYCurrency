@@ -13,7 +13,8 @@ class CurrencyService {
     static var shared = CurrencyService()
     
     func getUrl(from base: String) -> String{
-        return "https://api.exchangeratesapi.io/latest?symbols=TRY,USD,GBP&base=\(base)"
+        // symbols=TRY,USD,GBP&
+        return "https://api.exchangeratesapi.io/latest?base=\(base)"
     }
     
     func getExchangeRates(base: String, onFinish: @escaping (_ rates: [Rate]) -> Void){
