@@ -14,6 +14,8 @@
 		84A08F48222F1110004FA8E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F46222F1110004FA8E8 /* LaunchScreen.storyboard */; };
 		84A08F53222F1110004FA8E8 /* TRYCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F52222F1110004FA8E8 /* TRYCurrencyTests.swift */; };
 		84A08F5E222F1110004FA8E8 /* TRYCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F5D222F1110004FA8E8 /* TRYCurrencyUITests.swift */; };
+		84A08F71222F1B77004FA8E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F70222F1B77004FA8E8 /* Constants.swift */; };
+		84A08F73222F1CAC004FA8E8 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F72222F1CAC004FA8E8 /* CurrencyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		84A08F59222F1110004FA8E8 /* TRYCurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRYCurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A08F5D222F1110004FA8E8 /* TRYCurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRYCurrencyUITests.swift; sourceTree = "<group>"; };
 		84A08F5F222F1110004FA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A08F70222F1B77004FA8E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84A08F72222F1CAC004FA8E8 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 		84A08F6E222F13EC004FA8E8 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				84A08F72222F1CAC004FA8E8 /* CurrencyService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 		84A08F6F222F13F7004FA8E8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				84A08F70222F1B77004FA8E8 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -296,8 +302,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A08F73222F1CAC004FA8E8 /* CurrencyService.swift in Sources */,
 				84A08F40222F110D004FA8E8 /* ViewController.swift in Sources */,
 				84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */,
+				84A08F71222F1B77004FA8E8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
