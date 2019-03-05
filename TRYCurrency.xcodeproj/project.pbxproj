@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1940C6E94E143D7CAC346D4F /* Pods_TRYCurrency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD835D968C7BF1BD2AA3D71B /* Pods_TRYCurrency.framework */; };
 		84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F3D222F110D004FA8E8 /* AppDelegate.swift */; };
 		84A08F40222F110D004FA8E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F3F222F110D004FA8E8 /* ViewController.swift */; };
 		84A08F43222F110D004FA8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F41222F110D004FA8E8 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		84A08F5E222F1110004FA8E8 /* TRYCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F5D222F1110004FA8E8 /* TRYCurrencyUITests.swift */; };
 		84A08F71222F1B77004FA8E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F70222F1B77004FA8E8 /* Constants.swift */; };
 		84A08F73222F1CAC004FA8E8 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F72222F1CAC004FA8E8 /* CurrencyService.swift */; };
+		84A08F75222F1E86004FA8E8 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F74222F1E86004FA8E8 /* Rate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		323802C34607157683ADCF51 /* Pods-TRYCurrency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRYCurrency.release.xcconfig"; path = "Target Support Files/Pods-TRYCurrency/Pods-TRYCurrency.release.xcconfig"; sourceTree = "<group>"; };
 		84A08F3A222F110D004FA8E8 /* TRYCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRYCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A08F3D222F110D004FA8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A08F3F222F110D004FA8E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +54,9 @@
 		84A08F5F222F1110004FA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A08F70222F1B77004FA8E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84A08F72222F1CAC004FA8E8 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		84A08F74222F1E86004FA8E8 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		CD835D968C7BF1BD2AA3D71B /* Pods_TRYCurrency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRYCurrency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE233B89953D5C5000925E58 /* Pods-TRYCurrency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRYCurrency.debug.xcconfig"; path = "Target Support Files/Pods-TRYCurrency/Pods-TRYCurrency.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1940C6E94E143D7CAC346D4F /* Pods_TRYCurrency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E7F05C2519A15520EBC8222 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE233B89953D5C5000925E58 /* Pods-TRYCurrency.debug.xcconfig */,
+				323802C34607157683ADCF51 /* Pods-TRYCurrency.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84A08F31222F110D004FA8E8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +101,8 @@
 				84A08F51222F1110004FA8E8 /* TRYCurrencyTests */,
 				84A08F5C222F1110004FA8E8 /* TRYCurrencyUITests */,
 				84A08F3B222F110D004FA8E8 /* Products */,
+				0E7F05C2519A15520EBC8222 /* Pods */,
+				C7FA8D964F0A71920F5B38A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +155,7 @@
 		84A08F6B222F13D6004FA8E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				84A08F74222F1E86004FA8E8 /* Rate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +190,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		C7FA8D964F0A71920F5B38A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD835D968C7BF1BD2AA3D71B /* Pods_TRYCurrency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A08F62222F1110004FA8E8 /* Build configuration list for PBXNativeTarget "TRYCurrency" */;
 			buildPhases = (
+				2D2DABC84CF83A7DB3A0C8E0 /* [CP] Check Pods Manifest.lock */,
 				84A08F36222F110D004FA8E8 /* Sources */,
 				84A08F37222F110D004FA8E8 /* Frameworks */,
 				84A08F38222F110D004FA8E8 /* Resources */,
+				F8E1875E6971C106D04998C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -297,6 +326,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D2DABC84CF83A7DB3A0C8E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TRYCurrency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E1875E6971C106D04998C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TRYCurrency/Pods-TRYCurrency-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TRYCurrency/Pods-TRYCurrency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84A08F36222F110D004FA8E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -305,6 +381,7 @@
 				84A08F73222F1CAC004FA8E8 /* CurrencyService.swift in Sources */,
 				84A08F40222F110D004FA8E8 /* ViewController.swift in Sources */,
 				84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */,
+				84A08F75222F1E86004FA8E8 /* Rate.swift in Sources */,
 				84A08F71222F1B77004FA8E8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,11 +555,13 @@
 		};
 		84A08F63222F1110004FA8E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE233B89953D5C5000925E58 /* Pods-TRYCurrency.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU6A9VFP8M;
 				INFOPLIST_FILE = TRYCurrency/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,11 +575,13 @@
 		};
 		84A08F64222F1110004FA8E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323802C34607157683ADCF51 /* Pods-TRYCurrency.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TU6A9VFP8M;
 				INFOPLIST_FILE = TRYCurrency/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

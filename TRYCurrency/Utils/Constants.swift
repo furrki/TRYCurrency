@@ -8,4 +8,4 @@
 
 import Foundation
 
-let currencyApiUrl = "https://api.exchangeratesapi.io/latest?symbols=TRY,USD,GBP&base=TRY"
+
