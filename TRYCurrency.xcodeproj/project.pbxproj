@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F3D222F110D004FA8E8 /* AppDelegate.swift */; };
+		84A08F40222F110D004FA8E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F3F222F110D004FA8E8 /* ViewController.swift */; };
+		84A08F43222F110D004FA8E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F41222F110D004FA8E8 /* Main.storyboard */; };
+		84A08F45222F1110004FA8E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F44222F1110004FA8E8 /* Assets.xcassets */; };
+		84A08F48222F1110004FA8E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A08F46222F1110004FA8E8 /* LaunchScreen.storyboard */; };
+		84A08F53222F1110004FA8E8 /* TRYCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F52222F1110004FA8E8 /* TRYCurrencyTests.swift */; };
+		84A08F5E222F1110004FA8E8 /* TRYCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A08F5D222F1110004FA8E8 /* TRYCurrencyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A08F4F222F1110004FA8E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A08F32222F110D004FA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A08F39222F110D004FA8E8;
+			remoteInfo = TRYCurrency;
+		};
+		84A08F5A222F1110004FA8E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A08F32222F110D004FA8E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A08F39222F110D004FA8E8;
+			remoteInfo = TRYCurrency;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84A08F3A222F110D004FA8E8 /* TRYCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRYCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A08F3D222F110D004FA8E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84A08F3F222F110D004FA8E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84A08F42222F110D004FA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A08F44222F1110004FA8E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84A08F47222F1110004FA8E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84A08F49222F1110004FA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A08F4E222F1110004FA8E8 /* TRYCurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRYCurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A08F52222F1110004FA8E8 /* TRYCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRYCurrencyTests.swift; sourceTree = "<group>"; };
+		84A08F54222F1110004FA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A08F59222F1110004FA8E8 /* TRYCurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRYCurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A08F5D222F1110004FA8E8 /* TRYCurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TRYCurrencyUITests.swift; sourceTree = "<group>"; };
+		84A08F5F222F1110004FA8E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84A08F37222F110D004FA8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A08F4B222F1110004FA8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A08F56222F1110004FA8E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84A08F31222F110D004FA8E8 = {
+			isa = PBXGroup;
+			children = (
+				84A08F3C222F110D004FA8E8 /* TRYCurrency */,
+				84A08F51222F1110004FA8E8 /* TRYCurrencyTests */,
+				84A08F5C222F1110004FA8E8 /* TRYCurrencyUITests */,
+				84A08F3B222F110D004FA8E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84A08F3B222F110D004FA8E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84A08F3A222F110D004FA8E8 /* TRYCurrency.app */,
+				84A08F4E222F1110004FA8E8 /* TRYCurrencyTests.xctest */,
+				84A08F59222F1110004FA8E8 /* TRYCurrencyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84A08F3C222F110D004FA8E8 /* TRYCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				84A08F6F222F13F7004FA8E8 /* Utils */,
+				84A08F6E222F13EC004FA8E8 /* Network */,
+				84A08F6D222F13E5004FA8E8 /* Controller */,
+				84A08F6C222F13DF004FA8E8 /* View */,
+				84A08F6B222F13D6004FA8E8 /* Model */,
+				84A08F3D222F110D004FA8E8 /* AppDelegate.swift */,
+				84A08F3F222F110D004FA8E8 /* ViewController.swift */,
+				84A08F41222F110D004FA8E8 /* Main.storyboard */,
+				84A08F44222F1110004FA8E8 /* Assets.xcassets */,
+				84A08F46222F1110004FA8E8 /* LaunchScreen.storyboard */,
+				84A08F49222F1110004FA8E8 /* Info.plist */,
+			);
+			path = TRYCurrency;
+			sourceTree = "<group>";
+		};
+		84A08F51222F1110004FA8E8 /* TRYCurrencyTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A08F52222F1110004FA8E8 /* TRYCurrencyTests.swift */,
+				84A08F54222F1110004FA8E8 /* Info.plist */,
+			);
+			path = TRYCurrencyTests;
+			sourceTree = "<group>";
+		};
+		84A08F5C222F1110004FA8E8 /* TRYCurrencyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84A08F5D222F1110004FA8E8 /* TRYCurrencyUITests.swift */,
+				84A08F5F222F1110004FA8E8 /* Info.plist */,
+			);
+			path = TRYCurrencyUITests;
+			sourceTree = "<group>";
+		};
+		84A08F6B222F13D6004FA8E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84A08F6C222F13DF004FA8E8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84A08F6D222F13E5004FA8E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84A08F6E222F13EC004FA8E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		84A08F6F222F13F7004FA8E8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84A08F39222F110D004FA8E8 /* TRYCurrency */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A08F62222F1110004FA8E8 /* Build configuration list for PBXNativeTarget "TRYCurrency" */;
+			buildPhases = (
+				84A08F36222F110D004FA8E8 /* Sources */,
+				84A08F37222F110D004FA8E8 /* Frameworks */,
+				84A08F38222F110D004FA8E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TRYCurrency;
+			productName = TRYCurrency;
+			productReference = 84A08F3A222F110D004FA8E8 /* TRYCurrency.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84A08F4D222F1110004FA8E8 /* TRYCurrencyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A08F65222F1110004FA8E8 /* Build configuration list for PBXNativeTarget "TRYCurrencyTests" */;
+			buildPhases = (
+				84A08F4A222F1110004FA8E8 /* Sources */,
+				84A08F4B222F1110004FA8E8 /* Frameworks */,
+				84A08F4C222F1110004FA8E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A08F50222F1110004FA8E8 /* PBXTargetDependency */,
+			);
+			name = TRYCurrencyTests;
+			productName = TRYCurrencyTests;
+			productReference = 84A08F4E222F1110004FA8E8 /* TRYCurrencyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84A08F58222F1110004FA8E8 /* TRYCurrencyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A08F68222F1110004FA8E8 /* Build configuration list for PBXNativeTarget "TRYCurrencyUITests" */;
+			buildPhases = (
+				84A08F55222F1110004FA8E8 /* Sources */,
+				84A08F56222F1110004FA8E8 /* Frameworks */,
+				84A08F57222F1110004FA8E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A08F5B222F1110004FA8E8 /* PBXTargetDependency */,
+			);
+			name = TRYCurrencyUITests;
+			productName = TRYCurrencyUITests;
+			productReference = 84A08F59222F1110004FA8E8 /* TRYCurrencyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84A08F32222F110D004FA8E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = furrki;
+				TargetAttributes = {
+					84A08F39222F110D004FA8E8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					84A08F4D222F1110004FA8E8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 84A08F39222F110D004FA8E8;
+					};
+					84A08F58222F1110004FA8E8 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 84A08F39222F110D004FA8E8;
+					};
+				};
+			};
+			buildConfigurationList = 84A08F35222F110D004FA8E8 /* Build configuration list for PBXProject "TRYCurrency" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84A08F31222F110D004FA8E8;
+			productRefGroup = 84A08F3B222F110D004FA8E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84A08F39222F110D004FA8E8 /* TRYCurrency */,
+				84A08F4D222F1110004FA8E8 /* TRYCurrencyTests */,
+				84A08F58222F1110004FA8E8 /* TRYCurrencyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84A08F38222F110D004FA8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A08F48222F1110004FA8E8 /* LaunchScreen.storyboard in Resources */,
+				84A08F45222F1110004FA8E8 /* Assets.xcassets in Resources */,
+				84A08F43222F110D004FA8E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A08F4C222F1110004FA8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A08F57222F1110004FA8E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84A08F36222F110D004FA8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A08F40222F110D004FA8E8 /* ViewController.swift in Sources */,
+				84A08F3E222F110D004FA8E8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A08F4A222F1110004FA8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A08F53222F1110004FA8E8 /* TRYCurrencyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A08F55222F1110004FA8E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A08F5E222F1110004FA8E8 /* TRYCurrencyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84A08F50222F1110004FA8E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A08F39222F110D004FA8E8 /* TRYCurrency */;
+			targetProxy = 84A08F4F222F1110004FA8E8 /* PBXContainerItemProxy */;
+		};
+		84A08F5B222F1110004FA8E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A08F39222F110D004FA8E8 /* TRYCurrency */;
+			targetProxy = 84A08F5A222F1110004FA8E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84A08F41222F110D004FA8E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A08F42222F110D004FA8E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84A08F46222F1110004FA8E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84A08F47222F1110004FA8E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84A08F60222F1110004FA8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84A08F61222F1110004FA8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84A08F63222F1110004FA8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TU6A9VFP8M;
+				INFOPLIST_FILE = TRYCurrency/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furrki.TRYCurrency;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84A08F64222F1110004FA8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TU6A9VFP8M;
+				INFOPLIST_FILE = TRYCurrency/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furrki.TRYCurrency;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84A08F66222F1110004FA8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZL8G3WV3F;
+				INFOPLIST_FILE = TRYCurrencyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furrki.TRYCurrencyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRYCurrency.app/TRYCurrency";
+			};
+			name = Debug;
+		};
+		84A08F67222F1110004FA8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZL8G3WV3F;
+				INFOPLIST_FILE = TRYCurrencyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furrki.TRYCurrencyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TRYCurrency.app/TRYCurrency";
+			};
+			name = Release;
+		};
+		84A08F69222F1110004FA8E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZL8G3WV3F;
+				INFOPLIST_FILE = TRYCurrencyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furrki.TRYCurrencyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TRYCurrency;
+			};
+			name = Debug;
+		};
+		84A08F6A222F1110004FA8E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JZL8G3WV3F;
+				INFOPLIST_FILE = TRYCurrencyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = furrki.TRYCurrencyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TRYCurrency;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84A08F35222F110D004FA8E8 /* Build configuration list for PBXProject "TRYCurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A08F60222F1110004FA8E8 /* Debug */,
+				84A08F61222F1110004FA8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A08F62222F1110004FA8E8 /* Build configuration list for PBXNativeTarget "TRYCurrency" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A08F63222F1110004FA8E8 /* Debug */,
+				84A08F64222F1110004FA8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A08F65222F1110004FA8E8 /* Build configuration list for PBXNativeTarget "TRYCurrencyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A08F66222F1110004FA8E8 /* Debug */,
+				84A08F67222F1110004FA8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A08F68222F1110004FA8E8 /* Build configuration list for PBXNativeTarget "TRYCurrencyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A08F69222F1110004FA8E8 /* Debug */,
+				84A08F6A222F1110004FA8E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84A08F32222F110D004FA8E8 /* Project object */;
+}
