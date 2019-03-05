@@ -11,6 +11,7 @@ import UIKit
 class MainVC: UIViewController {
     
     @IBOutlet weak var rateTable: RoundedTableView!
+    @IBOutlet weak var valTextField: UITextField!
     
     let base = "TRY"
     var rates = [Rate]()
@@ -25,6 +26,7 @@ class MainVC: UIViewController {
         rateTable.dataSource = self
         rateTable.tableFooterView = UIView()
         rateTable.separatorStyle = .none
+        rateTable.allowsSelection = false
         
     }
 }

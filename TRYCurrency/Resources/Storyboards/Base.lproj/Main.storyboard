@@ -97,6 +97,7 @@
                     </view>
                     <connections>
                         <outlet property="rateTable" destination="e7m-2k-TLg" id="fxb-8z-hZz"/>
+                        <outlet property="valTextField" destination="0wE-ZN-RSM" id="tSa-NN-APz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
