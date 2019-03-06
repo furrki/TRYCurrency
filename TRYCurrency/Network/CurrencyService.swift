@@ -13,8 +13,8 @@ class CurrencyService {
     static var shared = CurrencyService()
     
     func getUrl(from base: String) -> String{
-        // symbols=TRY,USD,GBP&
-        return "https://api.exchangeratesapi.io/latest?base=\(base)"
+        //
+        return "https://api.exchangeratesapi.io/latest?symbols=USD,EUR,GBP,CZK,CNY,JPY&base=\(base)"
     }
     
     func getExchangeRates(base: String, onFinish: @escaping (_ rates: [Rate]) -> Void){
@@ -27,8 +27,10 @@ class CurrencyService {
                 }
                 if let rates = json["rates"] as? Dictionary<String, Any> {
                     for (key, value) in rates {
-                        let rate = Rate(base: base, to: key, value: value as! Double)
-                        rateArray.append(rate)
+                        if base != key {
+                            let rate = Rate(base: base, to: key, value: value as! Double)
+                            rateArray.append(rate)
+                        }
                     }
                     onFinish(rateArray)
                 }

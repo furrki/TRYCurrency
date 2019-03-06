@@ -25,7 +25,7 @@ class RateCell: UITableViewCell {
     }
     
     func fillWith(rate: Rate, multiplier: Double) {
-        baseLabel.text = "\(multiplier) \(rate.base)"
-        toLabel.text = "\((rate.inverseValue * multiplier).limitDecimals()) \(rate.to)"
+        baseLabel.text = "\(multiplier) \(rate.to)"
+        toLabel.text = "\((rate.inverseValue * multiplier).limitDecimals()) \(rate.base)"
     }
 }

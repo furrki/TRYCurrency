@@ -20,7 +20,6 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         CurrencyService.shared.getExchangeRates(base: "TRY") { [unowned self] (rates) in
-            
             DispatchQueue.main.async {
                 self.rates = rates
                 self.rateTable.reloadData()
