@@ -24,8 +24,8 @@ class RateCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func fillWith(rate: Rate) {
-        baseLabel.text = "1 \(rate.base)"
-        toLabel.text = "\(rate.value.limitDecimals()) \(rate.to)"
+    func fillWith(rate: Rate, multiplier: Double) {
+        baseLabel.text = "\(multiplier) \(rate.base)"
+        toLabel.text = "\((rate.value * multiplier).limitDecimals()) \(rate.to)"
     }
 }
